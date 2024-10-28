@@ -11,8 +11,8 @@
         android:layout_width="410dp"
         android:layout_height="745dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-1dp">
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp">
 
         <TextView
             android:id="@+id/textView"
@@ -52,10 +52,10 @@
             android:inputType="phone"
             android:text="081258411249" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="127dp"
+            android:layout_height="102dp">
 
             <TextView
                 android:id="@+id/textView2"
@@ -67,7 +67,7 @@
 
             <RadioButton
                 android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
+                android:layout_width="118dp"
                 android:layout_height="wrap_content"
                 android:text="Laki - Laki"
                 tools:layout_editor_absoluteX="124dp"
@@ -80,6 +80,14 @@
                 android:text="Perempuan"
                 tools:layout_editor_absoluteX="234dp"
                 tools:layout_editor_absoluteY="260dp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -118,7 +126,9 @@
                 android:text="Membaca"
                 tools:layout_editor_absoluteX="262dp"
                 tools:layout_editor_absoluteY="320dp" />
+
         </LinearLayout>
+
 
         <Button
             android:id="@+id/button"
